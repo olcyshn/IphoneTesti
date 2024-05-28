@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+    <test name="Sequential Tests">
+        <classes>
+            <class name="UrunArama.Hepsiburada">
+                <methods>
+                    <include name="hepsiTest"/>
+                </methods>
+            </class>
+            <class name="UrunArama.Trendyol">
+                <methods>
+                    <include name="trendCase"/>
+                </methods>
+            </class>
+            <class name="Check.Karsilastirma">
+                <methods>
+                    <include name="compare"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
